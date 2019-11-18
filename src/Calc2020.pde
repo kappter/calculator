@@ -216,6 +216,9 @@ String handleEvent(String val, boolean num) {
     r = 0.0;
     l = 0.0;
     op = "";
+    //if (left) {
+    //  dVal=dVal.substring(0, dVal.length()-1);
+    //}
   } else if (val.equals("+")) {
     if (!left) {
       performCalc();
