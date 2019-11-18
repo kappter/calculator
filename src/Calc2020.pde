@@ -183,11 +183,16 @@ void keyPressed() {
     handleEvent("÷", false);
   } else if (key == '.') {
     handleEvent(".", false);
-  } else if (key == 27 || key == 'C') {
+  } else if (key == 'C') {
     handleEvent("C", false);
   } else if (key == 10) { //(key == CODED) {
     if (keyCode == ENTER || keyCode == RETURN) {
       handleEvent("=", false);
+    }
+  } else if(keyCode == 27)  {
+    key = 0;
+    if (key == 0) {
+      handleEvent("C", false);
     }
   }
 }
